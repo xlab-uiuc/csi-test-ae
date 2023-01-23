@@ -1,0 +1,5 @@
+export cli_jars="$HIVE_HOME/lib/hive-metastore-3.1.2.jar,$HIVE_HOME/lib/hive-exec-3.1.2.jar,$HIVE_HOME/lib/hive-common-3.1.2.jar,$HIVE_HOME/lib/hive-serde-3.1.2.jar,$HIVE_HOME/lib/guava-19.0.jar"
+export cli_packages="org.apache.spark:spark-avro_2.12:3.2.1"
+export hive_version="3.1.2"
+export hive_libs="$HIVE_HOME/lib/*"
+export hive_warehouse_dir="hdfs://localhost:9000/user/hive/warehouse"

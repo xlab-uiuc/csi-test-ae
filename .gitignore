@@ -1,0 +1,5 @@
+logs/*
+metastore_db/*
+spark-warehouse/*
+derby.log
+*.DS_Store

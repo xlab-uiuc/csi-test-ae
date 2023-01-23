@@ -1,0 +1,1390 @@
+{
+    "0":{
+        "t_w_df_r_sql_avro":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: TINYINT>.",
+            "write_value":"-128",
+            "log_location":"(read) log_w_df_r_sql_avro (line 35)",
+            "pass":false
+        },
+        "t_w_df_r_df_avro":{
+            "write_interface":"df",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: TINYINT>.",
+            "write_value":"-128",
+            "log_location":"(read) log_w_df_r_df_avro (line 59)",
+            "pass":false
+        }
+    },
+    "1":{
+        "t_w_df_r_sql_avro":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: TINYINT>.",
+            "write_value":"-1",
+            "log_location":"(read) log_w_df_r_sql_avro (line 252)",
+            "pass":false
+        },
+        "t_w_df_r_df_avro":{
+            "write_interface":"df",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: TINYINT>.",
+            "write_value":"-1",
+            "log_location":"(read) log_w_df_r_df_avro (line 236)",
+            "pass":false
+        }
+    },
+    "2":{
+        "t_w_df_r_sql_avro":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: TINYINT>.",
+            "write_value":"0",
+            "log_location":"(read) log_w_df_r_sql_avro (line 469)",
+            "pass":false
+        },
+        "t_w_df_r_df_avro":{
+            "write_interface":"df",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: TINYINT>.",
+            "write_value":"0",
+            "log_location":"(read) log_w_df_r_df_avro (line 413)",
+            "pass":false
+        }
+    },
+    "3":{
+        "t_w_df_r_sql_avro":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: TINYINT>.",
+            "write_value":"1",
+            "log_location":"(read) log_w_df_r_sql_avro (line 686)",
+            "pass":false
+        },
+        "t_w_df_r_df_avro":{
+            "write_interface":"df",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: TINYINT>.",
+            "write_value":"1",
+            "log_location":"(read) log_w_df_r_df_avro (line 590)",
+            "pass":false
+        }
+    },
+    "4":{
+        "t_w_df_r_sql_avro":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: TINYINT>.",
+            "write_value":"127",
+            "log_location":"(read) log_w_df_r_sql_avro (line 903)",
+            "pass":false
+        },
+        "t_w_df_r_df_avro":{
+            "write_interface":"df",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: TINYINT>.",
+            "write_value":"127",
+            "log_location":"(read) log_w_df_r_df_avro (line 767)",
+            "pass":false
+        }
+    },
+    "9":{
+        "t_w_df_r_sql_avro":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: SMALLINT>.",
+            "write_value":"-32768",
+            "log_location":"(read) log_w_df_r_sql_avro (line 1140)",
+            "pass":false
+        },
+        "t_w_df_r_df_avro":{
+            "write_interface":"df",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: SMALLINT>.",
+            "write_value":"-32768",
+            "log_location":"(read) log_w_df_r_df_avro (line 1104)",
+            "pass":false
+        }
+    },
+    "10":{
+        "t_w_df_r_sql_avro":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: SMALLINT>.",
+            "write_value":"-1",
+            "log_location":"(read) log_w_df_r_sql_avro (line 1357)",
+            "pass":false
+        },
+        "t_w_df_r_df_avro":{
+            "write_interface":"df",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: SMALLINT>.",
+            "write_value":"-1",
+            "log_location":"(read) log_w_df_r_df_avro (line 1281)",
+            "pass":false
+        }
+    },
+    "11":{
+        "t_w_df_r_sql_avro":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: SMALLINT>.",
+            "write_value":"0",
+            "log_location":"(read) log_w_df_r_sql_avro (line 1574)",
+            "pass":false
+        },
+        "t_w_df_r_df_avro":{
+            "write_interface":"df",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: SMALLINT>.",
+            "write_value":"0",
+            "log_location":"(read) log_w_df_r_df_avro (line 1458)",
+            "pass":false
+        }
+    },
+    "12":{
+        "t_w_df_r_sql_avro":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: SMALLINT>.",
+            "write_value":"1",
+            "log_location":"(read) log_w_df_r_sql_avro (line 1791)",
+            "pass":false
+        },
+        "t_w_df_r_df_avro":{
+            "write_interface":"df",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: SMALLINT>.",
+            "write_value":"1",
+            "log_location":"(read) log_w_df_r_df_avro (line 1635)",
+            "pass":false
+        }
+    },
+    "13":{
+        "t_w_df_r_sql_avro":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: SMALLINT>.",
+            "write_value":"32767",
+            "log_location":"(read) log_w_df_r_sql_avro (line 2008)",
+            "pass":false
+        },
+        "t_w_df_r_df_avro":{
+            "write_interface":"df",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Cannot convert Avro type {\"type\":\"record\",\"name\":\"topLevelRecord\",\"fields\":[{\"name\":\"c0\",\"type\":[\"int\",\"null\"]},{\"name\":\"c1\",\"type\":[\"int\",\"null\"]}]} to SQL type STRUCT<`c0`: INT, `c1`: SMALLINT>.",
+            "write_value":"32767",
+            "log_location":"(read) log_w_df_r_df_avro (line 1812)",
+            "pass":false
+        }
+    },
+    "112":{
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"[80 00 00 00]",
+            "write_value":"\ufffd\u0000\u0000\u0000",
+            "pass":false
+        },
+        "t_w_df_r_sql_avro":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"\ufffd\u0000\u0000\u0000",
+            "write_value":"[80 00 00 00]",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"[80 00 00 00]",
+            "write_value":"\ufffd\u0000\u0000\u0000",
+            "pass":false
+        },
+        "t_w_df_r_sql_parquet":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"\ufffd\u0000\u0000\u0000",
+            "write_value":"[80 00 00 00]",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"[80 00 00 00]",
+            "write_value":"\ufffd\u0000\u0000\u0000",
+            "pass":false
+        },
+        "t_w_df_r_sql_orc":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"\ufffd\u0000\u0000\u0000",
+            "write_value":"[80 00 00 00]",
+            "pass":false
+        }
+    },
+    "113":{
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"[FF]",
+            "write_value":"\ufffd",
+            "pass":false
+        },
+        "t_w_df_r_sql_avro":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"\ufffd",
+            "write_value":"[FF]",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"[FF]",
+            "write_value":"\ufffd",
+            "pass":false
+        },
+        "t_w_df_r_sql_parquet":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"\ufffd",
+            "write_value":"[FF]",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"[FF]",
+            "write_value":"\ufffd",
+            "pass":false
+        },
+        "t_w_df_r_sql_orc":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"\ufffd",
+            "write_value":"[FF]",
+            "pass":false
+        }
+    },
+    "114":{
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"[00]",
+            "write_value":"\u0000",
+            "pass":false
+        },
+        "t_w_df_r_sql_avro":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"\u0000",
+            "write_value":"[00]",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"[00]",
+            "write_value":"\u0000",
+            "pass":false
+        },
+        "t_w_df_r_sql_parquet":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"\u0000",
+            "write_value":"[00]",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"[00]",
+            "write_value":"\u0000",
+            "pass":false
+        },
+        "t_w_df_r_sql_orc":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"\u0000",
+            "write_value":"[00]",
+            "pass":false
+        }
+    },
+    "115":{
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"[01]",
+            "write_value":"\u0001",
+            "pass":false
+        },
+        "t_w_df_r_sql_avro":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"\u0001",
+            "write_value":"[01]",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"[01]",
+            "write_value":"\u0001",
+            "pass":false
+        },
+        "t_w_df_r_sql_parquet":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"\u0001",
+            "write_value":"[01]",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"[01]",
+            "write_value":"\u0001",
+            "pass":false
+        },
+        "t_w_df_r_sql_orc":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"\u0001",
+            "write_value":"[01]",
+            "pass":false
+        }
+    },
+    "116":{
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"[7F FF FF FF]",
+            "write_value":"\u007f\ufffd\ufffd\ufffd",
+            "pass":false
+        },
+        "t_w_df_r_sql_avro":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"\u007f\ufffd\ufffd\ufffd",
+            "write_value":"[7F FF FF FF]",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"[7F FF FF FF]",
+            "write_value":"\u007f\ufffd\ufffd\ufffd",
+            "pass":false
+        },
+        "t_w_df_r_sql_parquet":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"\u007f\ufffd\ufffd\ufffd",
+            "write_value":"[7F FF FF FF]",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"[7F FF FF FF]",
+            "write_value":"\u007f\ufffd\ufffd\ufffd",
+            "pass":false
+        },
+        "t_w_df_r_sql_orc":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"\u007f\ufffd\ufffd\ufffd",
+            "write_value":"[7F FF FF FF]",
+            "pass":false
+        }
+    },
+    "310":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"2022-01-03",
+            "write_value":"2022-01-03 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"2022-01-03",
+            "write_value":"2022-01-03 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"2022-01-03",
+            "write_value":"2022-01-03 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"2022-01-03",
+            "write_value":"2022-01-03 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"2022-01-03",
+            "write_value":"2022-01-03 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"2022-01-03",
+            "write_value":"2022-01-03 04:03:02",
+            "pass":false
+        }
+    },
+    "312":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"2022-01-01",
+            "write_value":"2022-01-01 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"2022-01-01",
+            "write_value":"2022-01-01 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"2022-01-01",
+            "write_value":"2022-01-01 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"2022-01-01",
+            "write_value":"2022-01-01 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"2022-01-01",
+            "write_value":"2022-01-01 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"2022-01-01",
+            "write_value":"2022-01-01 00:00:03",
+            "pass":false
+        }
+    },
+    "313":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"2022-05-04",
+            "write_value":"2022-05-04 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"2022-05-04",
+            "write_value":"2022-05-04 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"2022-05-04",
+            "write_value":"2022-05-04 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"2022-05-04",
+            "write_value":"2022-05-04 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"2022-05-04",
+            "write_value":"2022-05-04 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"2022-05-04",
+            "write_value":"2022-05-04 11:00:00",
+            "pass":false
+        }
+    },
+    "318":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"2022-01-03",
+            "write_value":"2022-01-03 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"2022-01-03",
+            "write_value":"2022-01-03 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"2022-01-03",
+            "write_value":"2022-01-03 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"2022-01-03",
+            "write_value":"2022-01-03 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"2022-01-03",
+            "write_value":"2022-01-03 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"2022-01-03",
+            "write_value":"2022-01-03 04:03:02",
+            "pass":false
+        }
+    },
+    "320":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"2022-01-01",
+            "write_value":"2022-01-01 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"2022-01-01",
+            "write_value":"2022-01-01 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"2022-01-01",
+            "write_value":"2022-01-01 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"2022-01-01",
+            "write_value":"2022-01-01 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"2022-01-01",
+            "write_value":"2022-01-01 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"2022-01-01",
+            "write_value":"2022-01-01 00:00:03",
+            "pass":false
+        }
+    },
+    "321":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"2022-05-04",
+            "write_value":"2022-05-04 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"2022-05-04",
+            "write_value":"2022-05-04 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"2022-05-04",
+            "write_value":"2022-05-04 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"2022-05-04",
+            "write_value":"2022-05-04 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"2022-05-04",
+            "write_value":"2022-05-04 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"2022-05-04",
+            "write_value":"2022-05-04 11:00:00",
+            "pass":false
+        }
+    },
+    "326":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"2022-01-07",
+            "write_value":"2022-01-07 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"2022-01-07",
+            "write_value":"2022-01-07 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"2022-01-07",
+            "write_value":"2022-01-07 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"2022-01-07",
+            "write_value":"2022-01-07 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"2022-01-07",
+            "write_value":"2022-01-07 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"2022-01-07",
+            "write_value":"2022-01-07 04:03:02",
+            "pass":false
+        }
+    },
+    "328":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"2022-01-05",
+            "write_value":"2022-01-05 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"2022-01-05",
+            "write_value":"2022-01-05 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"2022-01-05",
+            "write_value":"2022-01-05 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"2022-01-05",
+            "write_value":"2022-01-05 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"2022-01-05",
+            "write_value":"2022-01-05 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"2022-01-05",
+            "write_value":"2022-01-05 00:00:03",
+            "pass":false
+        }
+    },
+    "329":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"2022-05-08",
+            "write_value":"2022-05-08 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"2022-05-08",
+            "write_value":"2022-05-08 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"2022-05-08",
+            "write_value":"2022-05-08 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"2022-05-08",
+            "write_value":"2022-05-08 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"2022-05-08",
+            "write_value":"2022-05-08 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"2022-05-08",
+            "write_value":"2022-05-08 11:00:00",
+            "pass":false
+        }
+    },
+    "334":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"2022-01-07",
+            "write_value":"2022-01-07 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"2022-01-07",
+            "write_value":"2022-01-07 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"2022-01-07",
+            "write_value":"2022-01-07 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"2022-01-07",
+            "write_value":"2022-01-07 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"2022-01-07",
+            "write_value":"2022-01-07 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"2022-01-07",
+            "write_value":"2022-01-07 04:03:02",
+            "pass":false
+        }
+    },
+    "336":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"2022-01-05",
+            "write_value":"2022-01-05 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"2022-01-05",
+            "write_value":"2022-01-05 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"2022-01-05",
+            "write_value":"2022-01-05 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"2022-01-05",
+            "write_value":"2022-01-05 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"2022-01-05",
+            "write_value":"2022-01-05 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"2022-01-05",
+            "write_value":"2022-01-05 00:00:03",
+            "pass":false
+        }
+    },
+    "337":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"2022-05-08",
+            "write_value":"2022-05-08 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"2022-05-08",
+            "write_value":"2022-05-08 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"2022-05-08",
+            "write_value":"2022-05-08 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"2022-05-08",
+            "write_value":"2022-05-08 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"2022-05-08",
+            "write_value":"2022-05-08 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"2022-05-08",
+            "write_value":"2022-05-08 11:00:00",
+            "pass":false
+        }
+    },
+    "342":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"2016-03-02",
+            "write_value":"2016-03-02 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"2016-03-02",
+            "write_value":"2016-03-02 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"2016-03-02",
+            "write_value":"2016-03-02 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"2016-03-02",
+            "write_value":"2016-03-02 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"2016-03-02",
+            "write_value":"2016-03-02 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"2016-03-02",
+            "write_value":"2016-03-02 04:03:02",
+            "pass":false
+        }
+    },
+    "344":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"2016-02-29",
+            "write_value":"2016-02-29 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"2016-02-29",
+            "write_value":"2016-02-29 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"2016-02-29",
+            "write_value":"2016-02-29 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"2016-02-29",
+            "write_value":"2016-02-29 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"2016-02-29",
+            "write_value":"2016-02-29 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"2016-02-29",
+            "write_value":"2016-02-29 00:00:03",
+            "pass":false
+        }
+    },
+    "345":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"2016-07-01",
+            "write_value":"2016-07-01 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"2016-07-01",
+            "write_value":"2016-07-01 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"2016-07-01",
+            "write_value":"2016-07-01 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"2016-07-01",
+            "write_value":"2016-07-01 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"2016-07-01",
+            "write_value":"2016-07-01 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"2016-07-01",
+            "write_value":"2016-07-01 11:00:00",
+            "pass":false
+        }
+    },
+    "350":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"1970-01-02",
+            "write_value":"1970-01-02 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"1970-01-02",
+            "write_value":"1970-01-02 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"1970-01-02",
+            "write_value":"1970-01-02 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"1970-01-02",
+            "write_value":"1970-01-02 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"1970-01-02",
+            "write_value":"1970-01-02 04:03:02",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"1970-01-02",
+            "write_value":"1970-01-02 04:03:02",
+            "pass":false
+        }
+    },
+    "352":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"1969-12-31",
+            "write_value":"1969-12-31 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"1969-12-31",
+            "write_value":"1969-12-31 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"1969-12-31",
+            "write_value":"1969-12-31 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"1969-12-31",
+            "write_value":"1969-12-31 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"1969-12-31",
+            "write_value":"1969-12-31 00:00:03",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"1969-12-31",
+            "write_value":"1969-12-31 00:00:03",
+            "pass":false
+        }
+    },
+    "353":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"1970-05-03",
+            "write_value":"1970-05-03 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_orc":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"orc",
+            "read_value":"1970-05-03",
+            "write_value":"1970-05-03 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"1970-05-03",
+            "write_value":"1970-05-03 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_sql_parquet":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"parquet",
+            "read_value":"1970-05-03",
+            "write_value":"1970-05-03 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_sql_orc":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"orc",
+            "read_value":"1970-05-03",
+            "write_value":"1970-05-03 11:00:00",
+            "pass":false
+        },
+        "t_w_sql_r_df_parquet":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"parquet",
+            "read_value":"1970-05-03",
+            "write_value":"1970-05-03 11:00:00",
+            "pass":false
+        }
+    },
+    "420":{
+        "t_w_sql_r_sql_avro":{
+            "write_interface":"sql",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"No output",
+            "write_value":"{-2147483648:{12831273.24 3.141592653589793E-305, find exception: Error in query: Table not found: ws420; line 1 pos 12;",
+            "log_location":"(write) log_w_sql_avro (line 21624)",
+            "pass":false
+        },
+        "t_w_df_r_sql_avro":{
+            "write_interface":"df",
+            "read_interface":"sql",
+            "format_type":"avro",
+            "read_value":"No output",
+            "write_value":"{-2147483648 -> {12831273.24 -> 3.141592653589793E-305}}, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Unexpected type MapType(IntegerType,MapType(StringType,DoubleType,true),true).",
+            "log_location":"(write) log_w_df_avro (line 22125)",
+            "pass":false
+        },
+        "t_w_sql_r_df_avro":{
+            "write_interface":"sql",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.AnalysisException: Table or view not found: ws420; line 1 pos 14;",
+            "write_value":"{-2147483648:{12831273.24 3.141592653589793E-305, find exception: Error in query: Table not found: ws420; line 1 pos 12;",
+            "log_location":"(read) log_w_sql_r_df_avro (line 3324)",
+            "pass":false
+        },
+        "t_w_df_r_df_avro":{
+            "write_interface":"df",
+            "read_interface":"df",
+            "format_type":"avro",
+            "read_value":"No output, find exception: org.apache.spark.sql.AnalysisException: Table or view not found: ws420; line 1 pos 14;",
+            "write_value":"{-2147483648 -> {12831273.24 -> 3.141592653589793E-305}}, find exception: org.apache.spark.sql.avro.IncompatibleSchemaException: Unexpected type MapType(IntegerType,MapType(StringType,DoubleType,true),true).",
+            "log_location":"(read) log_w_df_r_df_avro (line 10902)",
+            "pass":false
+        }
+    }
+}
