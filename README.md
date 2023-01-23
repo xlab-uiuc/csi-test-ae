@@ -12,9 +12,15 @@ Dependencies
 apt-get update && \
     apt-get install -y openjdk-8-jdk maven python3 python3-pip ssh rsync
 ```
+
 ### Setup
 Run setup script or directly use Docker setup
 
+You should expect Spark, Hive, and Hadoop to be installed after the setup.
+
+TODO: changing $HOMEs
+
+TODO: adding information about testing to see if they are running
 
 ## Reproducing the experiments
 ### Scripts
