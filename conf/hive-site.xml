@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <property>
+        <name>hive.execution.engine</name>
+        <value>spark</value>
+        <description>Use Spark as Hive's execution engine</description>
+    </property>
+    <property>
+        <name>spark.master</name>
+        <value></value>
+        <description>Fetch this from http://Host-IP:8080 (Spark Master UI)</description>
+    </property>
+    <property>
+        <name>spark.eventLog.enabled</name>
+        <value>true</value>
+    </property>
+    <property>
+        <name>spark.eventLog.dir</name>
+        <value>/tmp/spark-events</value>
+    </property>
+    <property>
+        <name>spark.serializer</name>
+        <value>org.apache.spark.serializer.KryoSerializer</value>
+    </property>
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:derby:$HADOOP_HOME/metastore_db;create=true</value>
+        <description>JDBC connect string for a JDBC metastore</description>
+    </property>
+    <property>
+        <name>hive.metastore.warehouse.dir</name>
+        <value>hdfs://localhost:9000/user/hive/warehouse</value>
+        <description>Warehouse Location</description>
+    </property>
+</configuration>
