@@ -1,5 +1,46 @@
-## Installing Setup
-### Dependencies
+## Cross-System Testing Case Study: Spark-Hive Data Plane
+
+Running the experiments here can reproduce the test failures which reflect the discrepancies and reported issues discussed in Section 8 of the EuroSys '23 paper. 
+
+## Getting started
+### Requirements
+- Tested on Ubuntu 18/20 i7-11700 @ 2.50GHz, OS X
+- Total time: for installation, ~2 hours for all experiments
+
+Dependencies
+```commandline
+apt-get update && \
+    apt-get install -y openjdk-8-jdk maven python3 python3-pip ssh rsync
+```
+
+### Setup
+Run setup script or directly use Docker setup
+
+You should expect Spark, Hive, and Hadoop to be installed after the setup.
+
+TODO: changing $HOMEs
+
+TODO: adding information about testing to see if they are running
+
+## Reproducing the experiments
+### Scripts
+
+`spark_e2e.sh`: runs the Spark-Spark testing
+
+`spark_hive_oneway.sh`: runs Spark-Hive testing
+
+`hive_spark_oneway.sh`: runs Hive-Spark testing
+
+For detailed usage of any intermediate scripts, see [scripts_usage.md](scripts_usage.md).
+
+The test failures observed in `_failed.json` should include those indicated in the table below.
+Note that some test failures may appear multiple times in the table since the same test can exhibit more than one of the following behaviors or conditions.
+The test failures in the table are not comprehensive, omitted tests may be caused by similar root causes or exhibit similar behavior as included tests.
+
+
+
+<!---
+Dependencies
 ```commandline
 apt-get update && \
     apt-get install -y openjdk-8-jdk maven python3 python3-pip ssh rsync
@@ -225,3 +266,5 @@ The type will be inferred based on the constants provided. In this case it is in
 Note that `CAST` has different semantics from directly defining the value to have a specific type. The default behavior usually will output `NULL` in situations where directly defining the value would give an error, and this behavior is configurable.
 
 To construct a DataFrame with a specific type, use the `createDataFrame()` API. Steps TODO
+
+-->
