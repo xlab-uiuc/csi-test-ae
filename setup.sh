@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/sh
 
 # Install dependencies
 apt-get update && \
