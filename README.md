@@ -2,27 +2,58 @@
 
 Running the experiments here can reproduce the test failures which reflect the discrepancies and reported issues discussed in Section 8 of the EuroSys '23 paper. 
 
-## Getting started
+## Getting started (~1 hour)
 ### Requirements
-- Tested on Ubuntu 18/20 i7-11700 @ 2.50GHz, OS X
-- Total time: for installation, ~2 hours for all experiments
-
-Dependencies
-```commandline
-apt-get update && \
-    apt-get install -y openjdk-8-jdk maven python3 python3-pip ssh rsync
-```
+- Tested on Ubuntu 20 i7-11700 @ 2.50GHz, OS X
+- Total time: ~1 hour for installation, ~2 hours for all experiments
 
 ### Setup
-Run setup script or directly use Docker setup
+If you intend on using the provided Docker setup
 
-You should expect Spark, Hive, and Hadoop to be installed after the setup.
+If you are not using the provided Docker setup,
+run the setup script 
+```bash
+./setup.sh
+```
 
-TODO: changing $HOMEs
+You should expect two Spark instances, Hive, and Hadoop to be installed after the setup.
 
 TODO: adding information about testing to see if they are running
 
-## Reproducing the experiments
+## Reproducing the experiments (~ 2 hours)
+Before running the experiment scripts please set the environment variables `SPARK_HOME_E2E`, `SPARK_HOME_ONEWAY`, `HADOOP_HOME`, `HIVE_HOME` to the corresponding newly-created directories.
+```bash
+export SPARK_HOME_E2E=/path-to/spark
+export SPARK_HOME_ONEWAY=/path-to/spark-hive
+export HADOOP_HOME=/path-to/hadoop
+export HIVE_HOME=/path-to/hive
+```
+
+For the docker image it would be 
+```bash
+export SPARK_HOME_E2E=/home/csiuser/csi-test-ae/spark
+export SPARK_HOME_ONEWAY=/home/csiuser/csi-test-ae/spark-hive
+export HADOOP_HOME=/home/csiuser/csi-test-ae/hadoop
+export HIVE_HOME=/home/csiuser/csi-test-ae/hive
+```
+
+If you are not running the experiments in the provided docker image, in `/path-to/hive/conf/hive-site.xml` change the following configuration
+replacing `/home/csiuser/csi-test-ae/hadoop/` with `/path-to/hadoop`.
+```xml
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:derby:/home/csiuser/csi-test-ae/hadoop/metastore_db;create=true</value>
+        <description>JDBC connect string for a JDBC metastore</description>
+    </property>
+```
+
+To execute the experiments
+```bash
+./spark_e2e.sh
+./spark_hive_oneway.sh
+./hive_spark_oneway.sh
+```
+
 ### Scripts
 
 `spark_e2e.sh`: runs the Spark-Spark testing
