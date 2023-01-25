@@ -9,6 +9,10 @@ curl https://archive.apache.org/dist/hadoop/core/hadoop-3.3.2/hadoop-3.3.2.tar.g
 mv hadoop-3.3.2 hadoop
 cd hadoop
 export HADOOP_HOME=$(pwd)
+export HADOOP_COMMON_HOME=$(pwd)
+export HADOOP_HDFS_HOME=$(pwd)
+export HADOOP_YARN_HOME=$(pwd)
+export HADOOP_MAPRED_HOME=$(pwd)
 
 # Set up Hadoop configs from the config files
 cp ../conf/hadoop-env.sh etc/hadoop/hadoop-env.sh
