@@ -1,5 +1,5 @@
 # Fetch ubuntu 18.04 LTS docker image
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV PYSPARK_PYTHON=python3
