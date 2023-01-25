@@ -1,18 +1,10 @@
-#!/bin/sh
-
-# Install dependencies
-apt-get update && \
-    apt-get install -y openjdk-8-jdk maven python3 python3-pip ssh rsync
+#!/bin/bash
 
 # Hadoop install
 curl https://archive.apache.org/dist/hadoop/core/hadoop-3.3.2/hadoop-3.3.2.tar.gz | tar xz -C .
 mv hadoop-3.3.2 hadoop
 cd hadoop
 export HADOOP_HOME=$(pwd)
-export HADOOP_COMMON_HOME=$(pwd)
-export HADOOP_HDFS_HOME=$(pwd)
-export HADOOP_YARN_HOME=$(pwd)
-export HADOOP_MAPRED_HOME=$(pwd)
 
 # Set up Hadoop configs from the config files
 cp ../conf/hadoop-env.sh etc/hadoop/hadoop-env.sh
@@ -45,7 +37,7 @@ mkdir /tmp/spark-events
 
 # Hive is only compatible with Spark with version <= 2.3.0
 git checkout v2.3.0
-./build/mvn -Dhadoop.version=3.3.2 -Pyarn -Phive -Phive-thriftserver -DskipTests clean install
+# ./build/mvn -Dhadoop.version=3.3.2 -Pyarn -Phive -Phive-thriftserver -DskipTests clean install
 
 # Find Hive jars bundled with Spark
 find $SPARK_HOME/assembly/target/scala-2.11/jars -name "*hive*.jar"
@@ -93,7 +85,7 @@ git clone https://github.com/apache/spark
 cd spark
 export SPARK_HOME_E2E=$(pwd)
 git checkout v3.2.1
-./build/mvn -Dhadoop.version=3.3.2 -Pyarn -Phive -Phive-thriftserver -DskipTests clean install
+# ./build/mvn -Dhadoop.version=3.3.2 -Pyarn -Phive -Phive-thriftserver -DskipTests clean install
 
 # Set up Spark configs
 cp ../conf/spark-hive-site.xml conf/hive-site.xml
