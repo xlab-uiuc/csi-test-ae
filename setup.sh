@@ -15,6 +15,11 @@ cp ../conf/hadoop-env.sh etc/hadoop/hadoop-env.sh
 cp ../conf/core-site.xml etc/hadoop/core-site.xml
 cp ../conf/hdfs-site.xml etc/hadoop/hdfs-site.xml
 
+# Set up localhost ssh
+ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+chmod 0600 ~/.ssh/authorized_keys
+
 # Start HDFS nodes
 $HADOOP_HOME/bin/hdfs namenode -format
 $HADOOP_HOME/sbin/start-all.sh
