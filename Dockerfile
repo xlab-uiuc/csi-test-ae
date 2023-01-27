@@ -66,7 +66,7 @@ RUN mkdir /tmp/spark-events && \
     cd spark-hive && \
     # Hive is only compatible with Spark with version <= 2.3.0
     git checkout v2.3.0 && \
-    export SPARK_HOME=$(pwd)
+    export SPARK_HOME=$(pwd) && \
     ./build/mvn -Dhadoop.version=3.3.2 -Pyarn -Phive -Phive-thriftserver -DskipTests clean install && \
     # Find Hive jars bundled with Spark
     find $SPARK_HOME_ONEWAY/assembly/target/scala-2.11/jars -name "*hive*.jar" && \
@@ -80,7 +80,7 @@ RUN mkdir /tmp/spark-events && \
 RUN git clone https://github.com/apache/spark && \
     cd spark && \
     git checkout v3.2.1 && \
-    export SPARK_HOME=$(pwd)
+    export SPARK_HOME=$(pwd) && \
     ./build/mvn -Dhadoop.version=3.3.2 -Pyarn -Phive -Phive-thriftserver -DskipTests clean install
 
 # Set up Spark configs
