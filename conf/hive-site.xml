@@ -25,7 +25,7 @@
     </property>
     <property>
         <name>javax.jdo.option.ConnectionURL</name>
-        <value>jdbc:derby:/home/csiuser/csi-test-ae/hadoop/metastore_db;create=true</value>
+        <value>jdbc:derby:/csi-test-ae/hadoop/metastore_db;create=true</value>
         <description>JDBC connect string for a JDBC metastore</description>
     </property>
     <property>

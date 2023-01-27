@@ -9,8 +9,8 @@ RUN apt-get update && \
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends build-essential\
-        expect git vim zip unzip wget openjdk-8-jdk wget maven sudo curl
-RUN apt-get install -y python3 python3-pip ssh pdsh
+        expect git vim zip unzip wget openjdk-8-jdk wget maven curl \
+        apt-get install -y python3 python3-pip ssh
 
 RUN echo '#! /bin/sh' > /usr/bin/mesg && \
   chmod 755 /usr/bin/mesg
@@ -22,24 +22,23 @@ RUN echo '#! /bin/sh' > /usr/bin/mesg && \
 # Set relevant environment variables to simplify usage of spark
 
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-RUN useradd -m csiuser
+RUN useradd -d /home/csiuser -m csiuser --shell /bin/bash
 
 RUN update-java-alternatives --set /usr/lib/jvm/java-1.8.0-openjdk-amd64
 
-RUN cd /home/csiuser && \
-    git clone https://github.com/xlab-uiuc/csi-test-ae.git
+RUN git clone https://github.com/xlab-uiuc/csi-test-ae.git
 
 ENV MAVEN_OPTS="-Xss64m -Xmx2g -XX:ReservedCodeCacheSize=1g"
 
 # COPY setup.sh /home/csiuser/csi-test-ae/setup.sh
 
-ENV HADOOP_HOME=/home/csiuser/csi-test-ae/hadoop
+ENV HADOOP_HOME=/csi-test-ae/hadoop
 ENV HADOOP_COMMON_HOME=$HADOOP_HOME
 ENV HADOOP_HDFS_HOME=$HADOOP_HOME
 ENV HADOOP_YARN_HOME=$HADOOP_HOME
 ENV HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
 ENV HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
-ENV HADOOP_MAPRED_HOME=/home/csiuser/csi-test-ae/hadoop
+ENV HADOOP_MAPRED_HOME=$HADOOP_HOME
 ENV YARN_HOME=$HADOOP_HOME
 ENV HADOOP_INSTALL=$HADOOP_HOME
 ENV HADOOP_CONF_DIR=$HADOOP_HOME
@@ -48,15 +47,15 @@ ENV JAVA_LIBRARY_PATH=$HADOOP_HOME/lib/native:$JAVA_LIBRARY_PATH
 ENV HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
 ENV HADOOP_INSTALL=$HADOOP_HOME
 
-ENV SPARK_HOME_ONEWAY=/home/csiuser/csi-test-ae/spark-hive
-ENV SPARK_HOME_E2E=/home/csiuser/csi-test-ae/spark
-ENV HIVE_HOME=/home/csiuser/csi-test-ae/hive
+ENV SPARK_HOME_ONEWAY=/csi-test-ae/spark-hive
+ENV SPARK_HOME_E2E=/csi-test-ae/spark
+ENV HIVE_HOME=/csi-test-ae/hive
 
 ENV PATH=$PATH:$HADOOP_HOME/bin
 # RUN cd /home/csiuser/csi-test-ae && \
 #     /bin/bash ./setup.sh
 
-WORKDIR /home/csiuser/csi-test-ae
+WORKDIR /csi-test-ae
 
 # Spark setup for one way experiments
 RUN git clone https://github.com/apache/spark spark-hive && \
@@ -67,7 +66,7 @@ RUN mkdir /tmp/spark-events && \
     cd spark-hive && \
     # Hive is only compatible with Spark with version <= 2.3.0
     git checkout v2.3.0 && \
-    export SPARK_HOME=$(pwd) && \
+    export SPARK_HOME=$(pwd)
     ./build/mvn -Dhadoop.version=3.3.2 -Pyarn -Phive -Phive-thriftserver -DskipTests clean install && \
     # Find Hive jars bundled with Spark
     find $SPARK_HOME_ONEWAY/assembly/target/scala-2.11/jars -name "*hive*.jar" && \
@@ -81,13 +80,17 @@ RUN mkdir /tmp/spark-events && \
 RUN git clone https://github.com/apache/spark && \
     cd spark && \
     git checkout v3.2.1 && \
-    export SPARK_HOME=$(pwd) && \
+    export SPARK_HOME=$(pwd)
     ./build/mvn -Dhadoop.version=3.3.2 -Pyarn -Phive -Phive-thriftserver -DskipTests clean install
 
 # Set up Spark configs
 ADD conf/spark-hive-site.xml $SPARK_HOME_E2E/conf/hive-site.xml
 
 # Hadoop install
+# SSH without key
+RUN mkdir /root/.ssh && \
+    ssh-keygen -t rsa -f /root/.ssh/id_rsa -P '' && \
+    cat /root/.ssh/id_rsa.pub >> /root/.ssh/authorized_keys
 # Set up Hadoop configs from the config files
 RUN curl https://archive.apache.org/dist/hadoop/core/hadoop-3.3.2/hadoop-3.3.2.tar.gz | tar xz -C . && \
     mv hadoop-3.3.2 hadoop && \
@@ -98,10 +101,6 @@ ADD conf/core-site.xml $HADOOP_HOME/etc/hadoop
 ADD conf/hdfs-site.xml $HADOOP_HOME/etc/hadoop
 ADD conf/yarn-site.xml $HADOOP_HOME/etc/hadoop
 ADD conf/mapred-site.xml $HADOOP_HOME/etc/hadoop
-
-COPY conf/sshd_config /etc/ssh/sshd_config
-#COPY conf/ssh_config /home/csiuser/.ssh/config
-COPY conf/ssh_config /etc/ssh/ssh_config
 
 RUN wget https://archive.apache.org/dist/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz && \
     tar xzvf apache-hive-3.1.2-bin.tar.gz && \
@@ -119,7 +118,6 @@ RUN cd $HIVE_HOME/lib/ && \
 
 ADD conf/hive-site.xml $HIVE_HOME/conf/hive-site.xml
 RUN $HIVE_HOME/bin/schematool -dbType derby -initSchema
+EXPOSE 22 8020 8021 9000 9083
 
-RUN mkdir /home/csiuser/.ssh && \
-    ssh-keygen -t rsa -f /home/csiuser/.ssh/id_rsa -P '' && \
-    cat /home/csiuser/.ssh/id_rsa.pub >> /home/csiuser/.ssh/authorized_keys
+ENTRYPOINT service ssh start && /bin/bash

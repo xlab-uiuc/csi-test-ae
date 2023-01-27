@@ -20,7 +20,7 @@
     <!-- Directory Path where hadoop file system will be created(create these hadoop_storage directory and specify the path) -->
     <property>
         <name>dfs.name.dir</name>
-        <value>/home/csiuser/csi-test-ae/hadoop/hadoop_storage</value>
+        <value>/csi-test-ae/hadoop/hadoop_storage</value>
         <final>true</final>
     </property>
 
@@ -39,7 +39,7 @@
     <!-- Specify a particular Temporary directory, otherwise it will try to use defalut temp dir of system -->
     <property>
         <name>hadoop.tmp.dir</name>
-        <value>/home/csiuser/csi-test-ae/hadoop/tmp</value>
+        <value>/csi-test-ae/hadoop/tmp</value>
     </property>
 
     <!-- Below property is for hive setup -->
