@@ -9,8 +9,8 @@ RUN apt-get update && \
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends build-essential\
-        expect git vim zip unzip wget openjdk-8-jdk wget maven curl \
-        apt-get install -y python3 python3-pip ssh
+        expect git vim zip unzip wget openjdk-8-jdk wget maven curl && \
+    apt-get install -y python3 python3-pip ssh
 
 RUN echo '#! /bin/sh' > /usr/bin/mesg && \
   chmod 755 /usr/bin/mesg
