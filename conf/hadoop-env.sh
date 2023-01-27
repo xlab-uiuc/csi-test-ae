@@ -414,11 +414,11 @@ export HADOOP_OS_TYPE=${HADOOP_OS_TYPE:-$(uname -s)}
 # It uses the format of (command)_(subcommand)_USER.
 #
 # For example, to limit who can execute the namenode command,
-export HDFS_NAMENODE_USER=csiuser
-export HDFS_DATANODE_USER=csiuser
-export HDFS_SECONDARYNAMENODE_USER=csiuser
-export YARN_RESOURCEMANAGER_USER=csiuser
-export YARN_NODEMANAGER_USER=csiuser
+export HDFS_NAMENODE_USER="root"
+export HDFS_DATANODE_USER="root"
+export HDFS_SECONDARYNAMENODE_USER="root"
+export YARN_RESOURCEMANAGER_USER="root"
+export YARN_NODEMANAGER_USER="root"
 
 
 ###
