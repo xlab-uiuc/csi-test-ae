@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 clear
 
 ts=$(date "+%Y.%m.%d-%H.%M.%S")
@@ -23,7 +23,6 @@ table_diff="$script_dir"/table_diff.py
 test_failures="$script_dir"/test_failures.py
 
 # Absolute paths for Spark CLIs
-export SPARK_HOME="$spark_e2e"
 spark_sql="$SPARK_HOME"/bin/spark-sql
 spark_shell="$SPARK_HOME"/bin/spark-shell
 
@@ -33,6 +32,7 @@ declare -a ifs=("sql" "df")
 
 validate_environment_variables
 
+export SPARK_HOME="$spark_e2e"
 python3 "$script_dir"/value_gen.py "$logdir" spark spark
 
 start_hive_metastore

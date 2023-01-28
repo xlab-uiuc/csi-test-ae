@@ -1,5 +1,5 @@
 # Fetch ubuntu 18.04 LTS docker image
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV PYSPARK_PYTHON=python3
@@ -16,7 +16,7 @@ RUN echo '#! /bin/sh' > /usr/bin/mesg && \
   chmod 755 /usr/bin/mesg
 
 ################################################################################
-####################   Spark stuff   ###########################################
+####################   Tool stuff   ###########################################
 ################################################################################
 
 # Set relevant environment variables to simplify usage of spark
@@ -29,8 +29,6 @@ RUN update-java-alternatives --set /usr/lib/jvm/java-1.8.0-openjdk-amd64
 RUN git clone https://github.com/xlab-uiuc/csi-test-ae.git
 
 ENV MAVEN_OPTS="-Xss64m -Xmx2g -XX:ReservedCodeCacheSize=1g"
-
-# COPY setup.sh /home/csiuser/csi-test-ae/setup.sh
 
 ENV HADOOP_HOME=/csi-test-ae/hadoop
 ENV HADOOP_COMMON_HOME=$HADOOP_HOME
@@ -52,8 +50,6 @@ ENV SPARK_HOME_E2E=/csi-test-ae/spark
 ENV HIVE_HOME=/csi-test-ae/hive
 
 ENV PATH=$PATH:$HADOOP_HOME/bin
-# RUN cd /home/csiuser/csi-test-ae && \
-#     /bin/bash ./setup.sh
 
 WORKDIR /csi-test-ae
 
@@ -120,4 +116,8 @@ ADD conf/hive-site.xml $HIVE_HOME/conf/hive-site.xml
 RUN $HIVE_HOME/bin/schematool -dbType derby -initSchema
 EXPOSE 22 8020 8021 9000 9083
 
-ENTRYPOINT service ssh start && /bin/bash
+ADD setup.sh /csi-test-ae/setup.sh
+
+ENV LANG=en_US.UTF-8
+
+ENTRYPOINT service ssh start && ./setup.sh && /bin/bash

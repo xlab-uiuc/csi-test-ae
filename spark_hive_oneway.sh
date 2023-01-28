@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 clear
 
 ts=$(date "+%Y.%m.%d-%H.%M.%S")
@@ -25,8 +25,8 @@ value_gen="$script_dir"/value_gen.py
 get_tables="$script_dir"/get_tables.py
 
 # Absolute paths for Spark CLIs
-spark_sql="$SPARK_HOME"/bin/spark-sql
-spark_shell="$SPARK_HOME"/bin/spark-shell
+spark_sql="$SPARK_HOME_E2E"/bin/spark-sql
+spark_shell="$SPARK_HOME_E2E"/bin/spark-shell
 
 
 declare -a formats=("parquet" "orc" "avro")
