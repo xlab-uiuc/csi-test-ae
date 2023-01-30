@@ -21,11 +21,9 @@ RUN echo '#! /bin/sh' > /usr/bin/mesg && \
 
 # Set relevant environment variables to simplify usage of spark
 
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-RUN useradd -d /home/csiuser -m csiuser --shell /bin/bash
-
-RUN update-java-alternatives --set /usr/lib/jvm/java-1.8.0-openjdk-amd64
-
+RUN touch /env.sh
+RUN export arch="$(dpkg --print-architecture)"; export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-$arch; echo "export JAVA_HOME=$JAVA_HOME" >> env.sh
+RUN export arch="$(dpkg --print-architecture)"; update-java-alternatives --set /usr/lib/jvm/java-1.8.0-openjdk-$arch
 RUN git clone https://github.com/xlab-uiuc/csi-test-ae.git
 
 ENV MAVEN_OPTS="-Xss64m -Xmx2g -XX:ReservedCodeCacheSize=1g"
@@ -120,4 +118,4 @@ ADD setup.sh /csi-test-ae/setup.sh
 
 ENV LANG=en_US.UTF-8
 
-ENTRYPOINT service ssh start && ./setup.sh && /bin/bash
+ENTRYPOINT service ssh start && . /env.sh && ./setup.sh && /bin/bash
