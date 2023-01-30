@@ -23,8 +23,8 @@ table_diff="$script_dir"/table_diff.py
 test_failures="$script_dir"/test_failures.py
 
 # Absolute paths for Spark CLIs
-spark_sql="$SPARK_HOME"/bin/spark-sql
-spark_shell="$SPARK_HOME"/bin/spark-shell
+spark_sql="$SPARK_HOME_E2E"/bin/spark-sql
+spark_shell="$SPARK_HOME_E2E"/bin/spark-shell
 
 avro_package="org.apache.spark:spark-avro_2.12:3.2.1"
 declare -a formats=("parquet" "orc" "avro")
