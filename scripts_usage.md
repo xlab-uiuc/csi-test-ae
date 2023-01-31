@@ -42,8 +42,6 @@ outputs the other `logs/…/gen1`
 
 ----
 
-### Scripts based on new oracles
-
 ```inspect_result.py```: produces JSON-structured table output, compact row results and grouped based on known discrepancies.
 
 Usage: `python3 inspect_result.py log_dir <interface>` e.g. `python3 inspect_result.py logs/2022.04.16-15.36.49/ hs`
@@ -96,39 +94,4 @@ Outputs:
             ]
         }
     },
-```
-
-'''count_discrepancy.py''': 
-
-Usage: `python3 count_discrepancy.py`
-
-Outputs:
-
-```discrepancies_with_rows.json```: Generate `Table 12: Discrepancies detected by the Spark-Hive data-plane testing` in the paper.
-
-```json
-{
-    "If DataFrame writes or reads, a BYTE/SHORT value can be written to Avro but cannot be read": {
-        "valid": true,
-        "rows_per_oracle": {
-            "ss": {"difft": [0, 1, 2, 3, 4, 9, 10, 11, 12, 13], "eh": [], "wr": []},
-            "sh": {"difft": [0, 1, 2, 3, 4, 9, 10, 11, 12, 13], "eh": [], "wr": []},
-            "hs": {"difft": [], "eh": [], "wr": []}
-        }
-    },
-    ...
-```
-
-```discrepancies_count.json```: Generate "Table 10: Overview of test results" in the paper.
-```json
-{
-    "valid": {
-        "ss": {"difft": 6, "eh": 0, "wr": 0},
-        "sh": {"difft": 9, "wr": 0},
-        "hs": {"difft": 0, "wr": 0}
-    },
-    "invalid": {
-        "ss": {"difft": 5, "eh": 6}
-    }
-}
 ```
